@@ -1,6 +1,8 @@
-a {
+/*
+a{
   color:black;
 }
+*/
 #active {
   color: red;
 }
@@ -15,7 +17,6 @@ h1 {
   padding:20px;
 }
 ol{
-  border-right:1px solid gray;
   width:100px;
   margin:0;
   padding: 10px;
