@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <title>토끼에 대해 알아보자!</title>
   <link rel="stylesheet" href="style.css">
-</head>
 <body>
   <h1><a href="index.html" style="text-decoration: none">토끼에 대한 정보들</a></h1>
   <div id="grid">
-    <ol>
-      <li><a href="1.html" class="saw">일반적 분류</a></li>
-      <li><a href="2.html" class="saw">품종에 따른 분류</a></li>
-    </ol>
+    <div style="border-right:1px solid gray">
+      <ol>
+        <li><a href="1.html" class="saw">일반적 분류</a></li>
+        <li><a href="2.html" class="saw">품종에 따른 분류</a></li>
+      </ol>
+      <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+      ">
+      <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+      ">
+    </div>
     <div id="article">
       <h2><토끼는 어떤 동물일까요?></h2>
       <img src="rabbit title.jpg" width="400">
