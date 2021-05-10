@@ -17,10 +17,38 @@
 <body>
   <h1><a href="index.html" style="text-decoration: none">토끼에 대한 정보들</a></h1>
   <div id="grid">
-    <ol>
-      <li><a href="1.html" class="saw">일반적 분류</a></li>
-      <li><a href="2.html" class="saw" id="active">품종에 따른 분류</a></li>
-    </ol>
+    <div style="border-right:1px solid gray">
+      <ol>
+        <li><a href="1.html" class="saw">일반적 분류</a></li>
+        <li><a href="2.html" class="saw" id="active">품종에 따른 분류</a></li>
+      </ol>
+      <input id="night_day" type="button" value="night" onclick="
+      var target = document.querySelector('body');
+      if(this.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+      }
+    } else{
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+        alist[i].style.color = '';
+        i = i + 1;
+      }
+    }
+      ">
+    </div>
     <div id="article">
       <h2><품종에 따른 분류></h2>
       토끼를 품종에 따라 분류하면 다음과 같다.
